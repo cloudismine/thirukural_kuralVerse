@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&family=Noto+Sans+Tamil:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base font family for English */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tamil font class */
+.tamil-font {
+  font-family: 'Noto Sans Tamil', sans-serif;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Tamil font with Anek Tamil */
+.font-tamil {
+  font-family: "Anek Tamil", "Noto Sans Tamil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+/* Anek Tamil variable style class */
+.anek-tamil-default {
+  font-family: "Anek Tamil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.anek-tamil-medium {
+  font-family: "Anek Tamil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.anek-tamil-semibold {
+  font-family: "Anek Tamil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.anek-tamil-bold {
+  font-family: "Anek Tamil", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.font-english {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Traditional Tamil Manuscript Style */
+.font-manuscript {
+  font-family: "Catamaran", "Anek Tamil", serif;
+  font-weight: 500;
+  letter-spacing: 0.025em;
+}
+
+.font-traditional {
+  font-family: "Catamaran", "Anek Tamil", serif;
+  font-weight: 400;
+}
+
+.font-catamaran {
+  font-family: "Catamaran", sans-serif;
+}
+
+.font-catamaran-light {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 300;
+}
+
+.font-catamaran-medium {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 500;
+}
+
+.font-catamaran-semibold {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 600;
+}
+
+.font-catamaran-bold {
+  font-family: "Catamaran", sans-serif;
+  font-weight: 700;
+}
+
+/* Authentic Tamil Kural Box Styling - Clean Design */
+.kural-box {
+  background: #fdf6e3;
+  border: 2px solid #a0522d;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.kural-box:hover {
+  border-color: #7c3aed;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  margin-top: -2px;
+}
+
+/* Tamil Ornamental Divider - Clean Design */
+.tamil-divider {
+  background: #a0522d;
+  height: 2px;
+  position: relative;
+}
+
+.tamil-divider::before {
+  content: '❋';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fdf6e3;
+  color: #a0522d;
+  padding: 0 8px;
+  font-size: 16px;
+}
+
+/* Clean Text Colors - No Gradients */
+.text-heritage {
+  color: #a0522d;
+}
+
+.text-saffron {
+  color: #d97706;
+}
+
+.text-royal {
+  color: #7c3aed;
+}
+
+.text-tamil-primary {
+  color: #3e2c2c;
+}
+
+.text-tamil-secondary {
+  color: #a0522d;
+}
+
+/* Palm Leaf Chat Bubble */
+.chat-bubble-user {
+  background: #f9f0d3;
+  border: 1px solid #a0522d;
+  border-radius: 18px 18px 4px 18px;
+}
+
+.chat-bubble-ai {
+  background: #fdf6e3;
+  border: 1px solid #d97706;
+  border-radius: 18px 18px 18px 4px;
+}
+
+/* Dark Theme Styles */
+.dark {
+  --bg-manuscript: #2e1a0f;
+  --bg-sandalwood: #4a2c1a;
+  --text-tamil: #e5d8c3;
+  --text-sandalwood: #d4a373;
+  --border-sandalwood: #8b4513;
+  --bg-saffron: #b8751a;
+}
+
+.dark .bg-manuscript-50 {
+  background-color: var(--bg-manuscript);
+}
+
+.dark .bg-sandalwood-100 {
+  background-color: var(--bg-sandalwood);
+}
+
+.dark .text-tamil-800 {
+  color: var(--text-tamil);
+}
+
+.dark .text-sandalwood-600 {
+  color: var(--text-sandalwood);
+}
+
+.dark .border-sandalwood-500 {
+  border-color: var(--border-sandalwood);
+}
+
+.dark .bg-saffron-600 {
+  background-color: var(--bg-saffron);
+}
+
+.dark .chat-bubble-user {
+  background: #4a2c1a;
+  border-color: #8b4513;
+}
+
+.dark .chat-bubble-ai {
+  background: #2e1a0f;
+  border-color: #b8751a;
+}
