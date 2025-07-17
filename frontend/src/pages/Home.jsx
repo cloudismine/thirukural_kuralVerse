@@ -125,7 +125,7 @@ const Home = () => {
             
 
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-tamil-800 font-catamaran-bold">
-              {isTamil ? 'குறள்VERSE' : 'KuralVerse'}
+              {isTamil ? 'குறள்VERSE by Vasanth' : 'KuralVerse by Vasanth'}
             </h1>
             <p className="text-xl md:text-2xl text-sandalwood-600 mb-8 font-catamaran">
               {isTamil
